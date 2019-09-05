@@ -44,4 +44,4 @@ while count < len(answer):
     print(' '.join(display))
     print()
 print("CONGRATS YOU WIN!")
-print("Wanna play again? Guess a new letter")
+print("Wanna play again? Type python3 spaceman.py")
