@@ -17,7 +17,7 @@ used.extend(display)
 for i in range(len(display)):
     display[i] = "_"
 print(' '.join(display))
-print()
+print("_ =", "number of letters in each word")
 
 print("WELCOME TO SPACEMAN!")
 print("Theme: Food")
