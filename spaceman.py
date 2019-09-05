@@ -18,8 +18,7 @@ for i in range(len(display)):
 print(' '.join(display))
 print()
 
-print("CONGATS YOU PLAYED SPACEMAN!")
-
+print("WELCOME TO SPACEMAN!")
 
 count = 0 
 
