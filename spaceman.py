@@ -9,7 +9,7 @@ answer = list(answerlist[0])
 display = []
 used = []
 display.extend(answer)
-# used.extend(display)
+used.extend(display)
 
 
 
@@ -19,6 +19,7 @@ print(' '.join(display))
 print()
 
 print("WELCOME TO SPACEMAN!")
+print("Theme: Food")
 
 count = 0 
 
@@ -38,3 +39,8 @@ while count < len(answer):
         print("Sorry, wrong guess")
     
     print("you have guessed: ",count,"correct letters.")
+    
+    
+    print(' '.join(display))
+    print()
+print("CONGRATS YOU WIN!")
