@@ -1,6 +1,6 @@
 import random
 
-answerlist = ["fruit", "candy", "pizza", "butter", "cake", "pastry"]
+answerlist = ["fruit", "candy", "pizza", "butter", "cake", "pastry", "icecream","ramen"]
 
 random.shuffle(answerlist)
 
@@ -44,3 +44,4 @@ while count < len(answer):
     print(' '.join(display))
     print()
 print("CONGRATS YOU WIN!")
+print("Wanna play again?")
