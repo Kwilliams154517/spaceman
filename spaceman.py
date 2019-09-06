@@ -42,6 +42,10 @@ while count < len(answer):
         print("Sorry, wrong guess")
     
     print("you have guessed: ",count,"correct letters.")
+    # running = True
+    # while running:
+        
+        
     
     
     print(' '.join(display))
