@@ -17,8 +17,8 @@ used.extend(display)
 for i in range(len(display)):
     display[i] = "_"
 print(' '.join(display))
-
-print("(_ = number of letters in each word)")
+print(str(len(answer)) + " = number of letters in each word")
+print()
 
 print("WELCOME TO SPACEMAN!")
 print("Theme: Food")
@@ -34,6 +34,7 @@ while count < len(answer):
         if answer[i] == guess and guess in used :
             display[i] = guess
             count = count + 1 
+            
             
             used.remove(guess)
     
