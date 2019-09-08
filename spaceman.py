@@ -1,8 +1,7 @@
 import random
 
 answerlist = ["fruit", "candy", "pizza", "butter", "cake", "pastry", "icecream","ramen"]
-# let _ _ _ _ _ tell how many letters are in each word
-# make sure the number_of_letter_per_word match the index of each word chosen at random
+
 random.shuffle(answerlist)
 
 answer = list(answerlist[0])
@@ -42,14 +41,10 @@ while count < len(answer):
         print("Sorry, wrong guess")
     
     print("you have guessed: ",count,"correct letters.")
-    # running = True
-    # while running:
-        
-        
-    
     
     print(' '.join(display))
     print()
+    
 print("CONGRATS YOU WIN!")
 print("Wanna play again? Type python3 spaceman.py")
-# make restart happen on its own 
+
