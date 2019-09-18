@@ -113,7 +113,27 @@ def spaceman(secret_word):
             print("Youre a LoSeR")
             break
 
+def test_is_word_guessed():
+    assert( is_word_guessed('.', ["a", ".", "x"])), "is_word_guessed it broke"
+    assert(not is_word_guessed('kye', ["a", ".", "x"])), "is_word_guessed it broke"
+    assert(not is_word_guessed('whoa', ["a", "o", "x"])), "is_word_guessed it broke"
 
+
+def test_is_valid():
+    assert(not is_valid("s", "test")), "is_valid broken"
+    assert(is_valid("f", "test")), "is_valid broken"
+    assert(not is_valid("1", "word")), "is_valid broken"
+
+
+def test_get_guessed_word():
+    assert(get_guessed_word("secretword", ["a", "b", "f", "z"]) == "__________"), "get_guessed_word() isnt working"
+    assert(get_guessed_word("test", ["f", "t", "s"]) == "t_st"), "get_guessed_word() isnt working"
+    
+
+
+test_get_guessed_word()
+test_is_valid()
+test_is_word_guessed()
 #These function calls that will start the game
 secret_word = load_word()
 spaceman(secret_word)
@@ -125,3 +145,4 @@ while True:
         spaceman(secret_word)
     else:
         break
+
