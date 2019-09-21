@@ -113,6 +113,7 @@ def spaceman(secret_word):
             print("Youre a LoSeR")
             break
 
+
 def test_is_word_guessed():
     assert( is_word_guessed('.', ["a", ".", "x"])), "is_word_guessed it broke"
     assert(not is_word_guessed('kye', ["a", ".", "x"])), "is_word_guessed it broke"
@@ -145,4 +146,3 @@ while True:
         spaceman(secret_word)
     else:
         break
-
